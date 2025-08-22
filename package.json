@@ -9,10 +9,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "dev:sockets": "cd apps/sim && bun run dev:sockets",
-    "dev:full": "cd apps/sim && bun run dev:full",
+    "build": "node init && turbo run build",
+    "dev": "node init && turbo run dev",
+    "dev:sockets": "node init && cd apps/sim && bun run dev:sockets",
+    "dev:full": "node init && cd apps/sim && bun run dev:full",
     "test": "turbo run test",
     "format": "bunx biome format --write .",
     "format:check": "bunx biome format .",
@@ -33,7 +33,9 @@
     "@linear/sdk": "40.0.0",
     "@t3-oss/env-nextjs": "0.13.4",
     "@vercel/analytics": "1.5.0",
+    "dotenv": "^8.2.0",
     "geist": "^1.4.2",
+    "node-fetch": "^3.3.2",
     "react-colorful": "5.6.1",
     "remark-gfm": "4.0.1",
     "socket.io-client": "4.8.1"
