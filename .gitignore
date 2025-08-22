@@ -31,12 +31,7 @@ sim-standalone.tar.gz
 *.pem
 
 # env files
-.env
 *.env
-.env.local
-.env.development
-.env.test
-.env.production
 
 # vercel
 .vercel
@@ -65,7 +60,7 @@ start-collector.sh
 .turbo
 
 # VSCode
-.vscode
 
 ## Helm Chart Tests
 helm/sim/test
+config.bat

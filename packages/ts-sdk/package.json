@@ -15,7 +15,7 @@
   "scripts": {
     "build": "bun run build:tsc",
     "build:tsc": "tsc",
-    "dev:watch": "tsc --watch",
+    "dev:watch": "node api.js && tsc --watch",
     "prepublishOnly": "bun run build",
     "test": "vitest run",
     "test:watch": "vitest"
