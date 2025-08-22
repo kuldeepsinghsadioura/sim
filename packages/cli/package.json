@@ -8,8 +8,8 @@
     "simstudio": "dist/index.js"
   },
   "scripts": {
-    "build": "bun run build:tsc",
-    "build:tsc": "tsc",
+    "build": "node init && bun run build:tsc",
+    "build:tsc": "node init && tsc",
     "prepublishOnly": "bun run build"
   },
   "files": [

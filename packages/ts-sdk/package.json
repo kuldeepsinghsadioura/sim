@@ -13,9 +13,9 @@
     }
   },
   "scripts": {
-    "build": "bun run build:tsc",
-    "build:tsc": "tsc",
-    "dev:watch": "tsc --watch",
+    "build": "node init && bun run build:tsc",
+    "build:tsc": "node init && tsc",
+    "dev:watch": "node init && tsc --watch",
     "prepublishOnly": "bun run build",
     "test": "vitest run",
     "test:watch": "vitest"
